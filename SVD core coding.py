@@ -38,9 +38,9 @@ import cv2
 import os
 import numpy as np
 # the path of your local dataset
-Orl_Path = 'D:\download\ORL'
+Orl_Path = 'Your local dataset path'
 # the path to preserve the matrix of orl
-Output_Folder = 'D:\download\ORL_M'
+Output_Folder = 'Your local dataset path'
 # check whether the folder is existent or not
 if not os.path.exists(Output_Folder):
     os.makedirs(Output_Folder)
@@ -72,7 +72,7 @@ def Add_Matrix_List(Path):
             print(f"add matrix{i} successfully")
     print('Add complete')
     return Matrix_List
-Matrices_1=Add_Matrix_List(Path = 'D:\download\GLRAM 复现材料\ORL_M')
+Matrices_1=Add_Matrix_List(Path = 'Your local dataset path')
 Result = []
 for i in range(2,22,2):
     list = Matrices_Svd(Matrices_1,i)
