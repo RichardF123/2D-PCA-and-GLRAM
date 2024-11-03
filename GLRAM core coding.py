@@ -67,8 +67,8 @@ def Cal_Glram_Rmsre (Matrix_List,L,R):
 import cv2
 import os
 import numpy as np
-Orl_Path = 'D:\download\ORL'
-Output_Folder = 'D:\download\ORL_M'
+Orl_Path = 'Your local path of dataset'
+Output_Folder = 'Your local path of dataset'
 if not os.path.exists(Output_Folder):
     os.makedirs(Output_Folder)
 for Person_Folder in os.listdir(Orl_Path):
@@ -96,7 +96,7 @@ def Add_Matrix_List(Path):
     print('Add complete')
     return Matrix_List
 
-Matrices_1=Add_Matrix_List(Path = 'D:\download\GLRAM 复现材料\ORL_M')
+Matrices_1=Add_Matrix_List(Path = 'Your local path of dataset')
 Matrices_1,mean = Normalize(Matrices_1)
 result = []
 for i in range(2,22,2):
@@ -108,7 +108,7 @@ for i in range(2,22,2):
 x  = np.arange(2.,22.,2)
 plt.plot(x,result)
 plt.show
-path =  r'D:\download\GLRAM 复现材料\ORL_M\s40_10.npy'
+path =  r'Your local path of dataset\s40_10.npy'
 y = np.load(path)
 y = y - mean
 L0 = Init_Matrix(112,50)
