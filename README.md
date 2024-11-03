@@ -1,2 +1,2 @@
-# Duplication
-this repository is created to store the coding of duplicating paper
+# GLRAM, 2D-PCA and eigenface
+the
