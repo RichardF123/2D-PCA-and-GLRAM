@@ -29,7 +29,7 @@ def Add_Matrix_List(Path):
             print(f"add matrix{i} successfully")
     print('Add complete')
     return Matrix_List
-Matrices_1=Add_Matrix_List(Path = 'D:\download\GLRAM 复现材料\ORL_M')
+Matrices_1=Add_Matrix_List(Path = 'Your local path of dataset')
 def Normalize(matrice):
     size = matrice[0].shape
     mean = np.zeros(size)
@@ -43,7 +43,7 @@ def Normalize(matrice):
 N_Matrices_1,Mean = Normalize(Matrices_1)
 plt.imshow(Mean,cmap = 'gray')
 test_M = Trans_Stack(N_Matrices_1)
-path =  r'D:\download\GLRAM 复现材料\ORL_M\s40_10.npy'
+path =  r'Your local path of dataset\s40_10.npy'
 y = np.load(path)
 plt.imshow(y, cmap = 'gray')
 y1 = y-Mean
