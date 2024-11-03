@@ -1,4 +1,4 @@
-# GLRAM, 2D-PCA and eigenface
+# GLRAM, 2D-PCA and Eigenface(PCA)
 Here I upload the core coding of Three classical papers in the field of data compression, and show the effect on the ORL dataset  
 
 The ORL dataset can download form：  
