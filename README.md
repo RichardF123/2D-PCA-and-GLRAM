@@ -1,5 +1,15 @@
 # GLRAM, 2D-PCA and Eigenface(PCA)
-Here I update the core coding of Three classical papers in the field of data compression, and show the effect on the ORL dataset  
+Here I update the core coding of Three classical papers in the field of data compression, and show the effect on the ORL dataset    
+
+the SVD file is the code of SVD on ORL to compare with these three algorithm  
+
+the 2D-PCA file is the python code of 2D-PCA core code and its testing code on ORL  
+
+the GLRAM file is the python code of GLRAM core code and its testing code on ORL  
+
+the eigenface file is the python code of eigenface core code and its testing code on ORL  
+
+In the three file, the code is to caculate the RMSRE score and show the restruct picture of three algorithm to compare their abilities
 
 The ORL dataset can download form：  
 
